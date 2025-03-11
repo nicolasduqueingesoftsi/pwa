@@ -1,0 +1,160 @@
+/* 📌 Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f9; /* Fondo claro */
+    color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 📌 Contenedor principal */
+#loginContainer, #mainContainer, #checklistContainer {
+    width: 350px;
+    padding: 20px;
+    background: #808080;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* 📌 Estilos para el Logo del Login */
+#logoCheckList {
+    display: block;
+    margin: 0 auto;
+    width: 80px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* 📌 Logo */
+#loginContainer img, #checklistContainer img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+}
+
+/* 📌 Título y descripción */
+h2 {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 📌 Inputs */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 📌 Botón de inicio de sesión */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #009ee3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0080c0;
+}
+
+/* 📌 Estilos para Google Maps */
+#map {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* 📌 Lista de Notas */
+#listaNotas {
+    list-style: none;
+    padding: 0;
+}
+
+#listaNotas li {
+    background: #f8f9fa;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid #009ee3;
+    border-radius: 5px;
+}
+
+/* 📌 Estilos para el Checklist */
+#checklistContainer {
+    width: 350px;
+    padding: 20px;
+    background: #808080;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.checklist-group {
+    margin-bottom: 15px;
+    text-align: left;
+    color: white;
+}
+
+.checklist-group label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* 📌 Botón de Enviar Checklist */
+#submitChecklist {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitChecklist:hover {
+    background-color: #218838;
+}
+
+/* 📌 Pie de página con ondas de color */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #0080c0, #009ee3, #00b5ff, #6cdcff);
+}
+
+/* 📌 Diseño Responsivo */
+@media (max-width: 400px) {
+    #loginContainer, #mainContainer, #checklistContainer {
+        width: 90%;
+    }
+}

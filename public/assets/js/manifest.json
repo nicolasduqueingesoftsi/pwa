@@ -1,0 +1,22 @@
+{
+    "name": "Appolo Móvil",
+    "short_name": "Appolo",
+    "description": "Aplicación PWA para gestión de checklist y notas.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#808080",
+    "theme_color": "#009ee3",
+    "icons": [
+      {
+        "src": "/assets/images/logo_apolo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/images/logo_apolo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

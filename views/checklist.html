@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Diario</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+    <div id="checklistContainer">
+        <h2>✅ Checklist Diario</h2>
+
+        <form id="checklistForm">
+            <div class="checklist-item">
+                <label>¿Luces funcionando?</label>
+                <input type="radio" name="luces" value="true"> Sí
+                <input type="radio" name="luces" value="false"> No
+            </div>
+
+            <div class="checklist-item">
+                <label>¿Frenos en buen estado?</label>
+                <input type="radio" name="frenos" value="true"> Sí
+                <input type="radio" name="frenos" value="false"> No
+            </div>
+
+            <div class="checklist-item">
+                <label>¿Motor sin fallas?</label>
+                <input type="radio" name="motor" value="true"> Sí
+                <input type="radio" name="motor" value="false"> No
+            </div>
+
+            <button type="submit">📤 Enviar Checklist</button>
+        </form>
+
+        <p id="responseMessage"></p>
+        <a href="index.html">🔙 Volver al Inicio</a>
+    </div>
+
+    <script src="/assets/js/checklist.js"></script>
+</body>
+</html>

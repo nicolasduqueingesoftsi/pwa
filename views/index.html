@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA con Autenticación</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="manifest" href="/assets/js/manifest.json">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzZTuDNzBJMJqg0o7lVnZ4joceIolzHec&callback=initMap"></script>
+</head>
+<body>
+
+    <!-- 🔐 Sección de Login -->
+    <div id="loginContainer">
+        <h2>🔐 Iniciar Sesión</h2>
+        <input type="text" id="dniLogin" placeholder="DNI">
+        <input type="password" id="passwordLogin" placeholder="Contraseña">
+        <button id="loginBtn">Iniciar Sesión</button>
+    </div>
+
+    <!-- 🔓 Sección Principal (Se muestra después de login) -->
+    <div id="mainContainer" style="display: none;">
+        <h1>🚀 Bienvenido a la PWA</h1>
+        
+        <!-- 📌 Modo Oscuro -->
+        <button id="modoToggle">🌙 Modo Oscuro</button>
+        <!-- 📌 Botón para obtener ubicación -->
+        <button id="getLocation">Obtener Ubicación</button>
+        <div id="map"></div>
+        <br>
+        <button onclick="window.location.href='checklist.html'">📋 Ir al Checklist Diario</button>
+        <br>
+         <!-- 📌 Sección de Notas -->
+        <h3>📒 Notas</h3>
+        <input type="text" id="notaInput" placeholder="Escribe una nota">
+        <button id="guardarNota">Agregar Nota</button>
+        <ul id="listaNotas"></ul>
+        <!-- 📌 Botón para cerrar sesión -->
+        <button id="logoutBtn">🔓 Cerrar Sesión</button>
+    </div>
+
+    <script src="/assets/js/app.js"></script>
+
+</body>
+</html>
