@@ -7,7 +7,7 @@ dotenv.config();
 
 const authRoutes = require("./routes/authRoutes");
 const checklistRoutes = require("./routes/checklistRoutes");
-const notesRoutes = require("./routes/notesRoutes");
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -34,12 +34,9 @@ app.get("/checklist", (req, res) => {
 // 📌 Usar las rutas de autenticación y checklist
 app.use("/api/auth", authRoutes);
 app.use("/api/tow", checklistRoutes);
-app.use("/api/notes", notesRoutes);
+
 
 // 📌 Manejo de rutas no encontradas
-app.use((req, res) => {
-    res.status(404).json({ error: "❌ Ruta no encontrada" });
-});
 
 app.listen(PORT, () => {
     console.log(`✅ Servidor corriendo en http://localhost:${PORT}`);
